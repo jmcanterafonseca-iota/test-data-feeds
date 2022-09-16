@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://schema.org"
+    ],
+    "type": [
+        "Collection",
+        "DataFeed"
+    ],
+    "updated": "2021-12-12T12:12:12Z",
+    "items": [
+        {
+            "type": "Place",
+            "latitude": 41,
+            "longitude": -3.01,
+            "updated": "2021-12-12T11:11:11Z"
+        },
+        {
+            "type": "Place",
+            "latitude": 41,
+            "longitude": -2.55,
+            "updated": "2021-12-12T10:10:10Z"
+        }
+    ]
+}
