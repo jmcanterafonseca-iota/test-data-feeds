@@ -1,0 +1,29 @@
+{
+  "name": "data-feed-provider",
+  "version": "1.0.0",
+  "description": "Example of a Data Feed Provider",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmcanterafonseca-iota/test-data-feeds.git"
+  },
+  "keywords": [
+    "datafeed",
+    "gtsc"
+  ],
+  "author": "José M. Cantera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcanterafonseca-iota/test-data-feeds/issues"
+  },
+  "homepage": "https://github.com/jmcanterafonseca-iota/test-data-feeds#readme",
+  "dependencies": {
+    "fastify": "^4.6.0",
+    "node-fetch": "^3.2.10"
+  }
+}
