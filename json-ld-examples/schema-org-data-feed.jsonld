@@ -10,7 +10,7 @@
     "dataFeedElement": [
         {
             "item": {
-                "type": ["Place", "ArrivalAction"],
+                "type": ["ArrivalAction"],
                 "latitude": 41,
                 "longitude": -3.01
             },
