@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://schema.org"
+    ],
+    "type": [
+        "DataFeed"
+    ],
+    "dateModified": "2021-12-12T12:12:12Z",
+    "dataFeedElement": [
+        {
+            "item": {
+                "type": ["Place", "ArrivalAction"],
+                "latitude": 41,
+                "longitude": -3.01
+            },
+            "dateModified": "2021-12-12T11:11:11Z"
+        },
+        {
+            "item": {
+                "type": "Place",
+                "latitude": 41,
+                "longitude": -2.55
+            },
+            "dateModified": "2021-12-12T10:10:10Z"
+        }
+    ]
+}
