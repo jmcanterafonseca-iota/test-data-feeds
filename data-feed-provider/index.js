@@ -15,12 +15,14 @@ const resultDataFeedTemplate = {
 };
 
 function convertLocationToDecimal(event) {
-    const latitude = event.latDegree + event.latMinute / 60;
+    let latitude = event.latDegree + event.latMinute / 60;
+    latitude = Number.parseFloat(latitude).toFixed(3);
     if (event.latHemisphere === "S") {
         latitude*=-1;
     }
 
-    const longitude = event.longDegree + event.longMinute / 60;
+    let longitude = event.longDegree + event.longMinute / 60;
+    longitude = Number.parseFloat(longitude).toFixed(3);
     if (event.longHemishere === "W") {
         longitude *= -1;
     }
