@@ -16,13 +16,13 @@ const resultDataFeedTemplate = {
 
 function convertLocationToDecimal(event) {
     let latitude = event.latDegree + event.latMinute / 60;
-    latitude = Number.parseFloat(latitude).toFixed(3);
+    latitude = Number(Number.parseFloat(latitude).toFixed(3));
     if (event.latHemisphere === "S") {
         latitude*=-1;
     }
 
     let longitude = event.longDegree + event.longMinute / 60;
-    longitude = Number.parseFloat(longitude).toFixed(3);
+    longitude = Number(Number.parseFloat(longitude).toFixed(3));
     if (event.longHemishere === "W") {
         longitude *= -1;
     }
@@ -40,6 +40,7 @@ function translateEventType(event) {
 }
 
 function buildDataFeedItem(event) {
+  const location = convertLocationToDecimal(event);
   return {
     item: {
       type: translateEventType(event),
